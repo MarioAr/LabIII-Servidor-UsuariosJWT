@@ -1,0 +1,424 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Labo III - Servidor",
+		"_postman_id": "44b8251d-c1d4-9134-5003-5514a843d468",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET / Traer todos",
+			"request": {
+				"url": "localhost:3000/usuarios",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Mario",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "mario@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "legajo",
+							"value": "123",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "123456",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Post / Guardar",
+			"request": {
+				"url": "localhost:3000/usuarios",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Mario",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "mario@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "legajo",
+							"value": "123",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "123456",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Guarda datos:\nnombre, email, legajo, clave"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT/ Modifica",
+			"request": {
+				"url": "localhost:3000/usuarios",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Mario",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "mario@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "legajo",
+							"value": "123",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "123456",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Modifica datos:\nnombre, email, legajo, clave, id"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE / Borra",
+			"request": {
+				"url": "localhost:3000/usuarios",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Mario",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "mario@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "legajo",
+							"value": "123",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "123456",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Borra datos:\n\nid"
+			},
+			"response": []
+		},
+		{
+			"name": "POST / Login",
+			"request": {
+				"url": "localhost:3000/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Mario",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "mario@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "legajo",
+							"value": "123",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "123456",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Login\nDatos:\nemail, clave, seg"
+			},
+			"response": []
+		},
+		{
+			"name": "GET JWT/ Traer todos",
+			"request": {
+				"url": "localhost:3000/usuariosjwt",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJNYXJpbyIsImVtYWlsIjoibWFyaW9AZ21haWwuY29tIiwibGVnYWpvIjoxMjMsImV4cCI6MTUxMTc5MzY3NywiaWF0IjoxNTExNzkwMDc3fQ.CuiCtekQrpUuBM6p50aSFdLFBdu4MUJEaIEbP8lRWFA",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Mario",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "mario@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "legajo",
+							"value": "123",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "123456",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Trae todos con JWT en header:\n"
+			},
+			"response": []
+		},
+		{
+			"name": "POST JWT/ Guardar",
+			"request": {
+				"url": "localhost:3000/usuariosjwt",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJNYXJpbyIsImVtYWlsIjoibWFyaW9AZ21haWwuY29tIiwibGVnYWpvIjoxMjMsImV4cCI6MTUxMTc5MzY3NywiaWF0IjoxNTExNzkwMDc3fQ.CuiCtekQrpUuBM6p50aSFdLFBdu4MUJEaIEbP8lRWFA",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Mario",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "mario@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "legajo",
+							"value": "123",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "123456",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Igual a usuarios pero con JWT en header:\n"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT JWT/ Modificar",
+			"request": {
+				"url": "localhost:3000/usuariosjwt",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJNYXJpbyIsImVtYWlsIjoibWFyaW9AZ21haWwuY29tIiwibGVnYWpvIjoxMjMsImV4cCI6MTUxMTc5MzY3NywiaWF0IjoxNTExNzkwMDc3fQ.CuiCtekQrpUuBM6p50aSFdLFBdu4MUJEaIEbP8lRWFA",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Mario",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "mario@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "legajo",
+							"value": "123",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "123456",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "11",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Igual a usuarios pero con JWT en header:\n"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE JWT/ bORRAR",
+			"request": {
+				"url": "localhost:3000/usuariosjwt",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					},
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21icmUiOiJNYXJpbyIsImVtYWlsIjoibWFyaW9AZ21haWwuY29tIiwibGVnYWpvIjoxMjMsImV4cCI6MTUxMTc5MzY3NywiaWF0IjoxNTExNzkwMDc3fQ.CuiCtekQrpUuBM6p50aSFdLFBdu4MUJEaIEbP8lRWFA",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "11",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Igual a usuarios pero con JWT en header:\n"
+			},
+			"response": []
+		}
+	]
+}

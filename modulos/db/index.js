@@ -1,14 +1,16 @@
 let mysql = require('mysql'), connection;
+const CONF = require('../../configuracion');
+
 /**
  * Genera una conexion  la BD
  */
 function crearConexion()
 {
     connection = mysql.createConnection({
-        host     : 'localhost',
-        user     : 'root',
-        password : '',
-        database : 'utn'
+        host     : CONF.HOST,
+        user     : CONF.USER,
+        password : CONF.PASSWORD,
+        database : CONF.DATABASE
     });
     // connection.on('error', function(err) {
     //     console.log('Error', err.code);
